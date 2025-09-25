@@ -2,7 +2,7 @@ import { Form } from "react-bootstrap";
 
 export default function FilterQuiz({ setCategory }) {
   return (
-    <>
+    <section>
     <p>Filtrer par catégorie</p>
     <Form.Select
       className="mb-4"
@@ -13,6 +13,6 @@ export default function FilterQuiz({ setCategory }) {
       <option value="Science">Science</option>
       <option value="Histoire">Histoire</option>
     </Form.Select>
-    </>
+    </section>
   );
 }

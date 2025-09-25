@@ -1,11 +1,12 @@
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import useQuiz from "../../hooks/useQuiz";
+import { QuizContext } from "../../context/QuizContext";
 import "./QuestionItem.scss";
+import { useContext } from "react";
 
 export default function QuestionItem({ question, eventKey }) {
-  const { dispatch } = useQuiz();
+  const { dispatch } = useContext(QuizContext);
 
   return (
     <Accordion.Item eventKey={eventKey}>
@@ -22,7 +23,8 @@ export default function QuestionItem({ question, eventKey }) {
 
       <Accordion.Body>
         <Card body>
-          <p><strong>Réponse :</strong> {question.answer}</p>
+          <h6>Réponse :</h6>
+            <p>{question.answer}</p>
             <div className="d-flex gap-2">
               <Button
                 variant="success"

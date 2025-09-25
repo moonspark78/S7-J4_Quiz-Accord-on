@@ -1,0 +1,22 @@
+.question-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .question-text {
+    // rien à ajouter ici pour l'instant
+  }
+
+  .question-result {
+    margin-left: auto;
+    font-weight: bold;
+
+    &.juste {
+      color: green;
+    }
+
+    &.faux {
+      color: red;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import Accordion from "react-bootstrap/Accordion";
 import useQuiz from "../../hooks/useQuiz";
-//import QuestionItem from "./QuestionItem";
+import QuestionItem from "../QuestionItem/QuestionItem";
 
 export default function QuizAccordion({ category }) {
   const { state } = useQuiz();

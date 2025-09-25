@@ -3,7 +3,7 @@ import { Form } from "react-bootstrap";
 export default function FilterQuiz({ setCategory }) {
   return (
     <section>
-    <p>Filtrer par catégorie</p>
+    <p>Filtrer par catégorie.</p>
     <Form.Select
       className="mb-4"
       onChange={(e) => setCategory(e)}

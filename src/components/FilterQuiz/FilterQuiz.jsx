@@ -6,7 +6,7 @@ export default function FilterQuiz({ setCategory }) {
     <p>Filtrer par catégorie</p>
     <Form.Select
       className="mb-4"
-      onChange={(e) => setCategory(e.target.value)}
+      onChange={(e) => setCategory(e)}
     >
       <option value="Toutes">Toutes</option>
       <option value="Math">Math</option>

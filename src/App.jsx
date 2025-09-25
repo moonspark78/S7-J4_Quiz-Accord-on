@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import QuizAccordion from "./components/QuizAccordion/Quiz.jsx";
+import QuizAccordion from "./components/QuizAccordion/QuizAccordion.jsx";
 
 function App() {
   const [category, setCategory] = useState("Toutes");

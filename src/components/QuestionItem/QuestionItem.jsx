@@ -23,10 +23,10 @@ export default function QuestionItem({ question, eventKey }) {
       <Accordion.Body>
         <Card body>
           <p><strong>Réponse :</strong> {question.answer}</p>
-          {!question.result && (
             <div className="d-flex gap-2">
               <Button
                 variant="success"
+                disabled={!!question.result} 
                 onClick={() =>
                   dispatch({ type: "VALIDATE", id: question.id, result: "Juste" })
                 }
@@ -35,6 +35,7 @@ export default function QuestionItem({ question, eventKey }) {
               </Button>
               <Button
                 variant="danger"
+                disabled={!!question.result} 
                 onClick={() =>
                   dispatch({ type: "VALIDATE", id: question.id, result: "Faux" })
                 }
@@ -42,7 +43,6 @@ export default function QuestionItem({ question, eventKey }) {
                 Fausse
               </Button>
             </div>
-          )}
         </Card>
       </Accordion.Body>
     </Accordion.Item>

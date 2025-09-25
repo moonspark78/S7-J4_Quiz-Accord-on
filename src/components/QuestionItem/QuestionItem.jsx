@@ -14,7 +14,7 @@ export default function QuestionItem({ question, eventKey }) {
           <span className="question-text">{question.question}</span>
           {question.result && (
             <span className={`question-result ${question.result.toLowerCase()}`}>
-              {question.result}
+              {question}
             </span>
           )}
         </div>
